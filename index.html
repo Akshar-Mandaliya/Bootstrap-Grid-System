@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Grid System</title>
+  <link 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" 
+    rel="stylesheet"
+  >
+</head>
+<body>
+  <div class="container">
+   <div class="row">
+      <div class="col bg-primary text-white text-center p-3">Column 1</div>
+      <div class="col bg-secondary text-white text-center p-3">Column 2</div>
+      <div class="col bg-success text-white text-center p-3">Column 3</div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-4 bg-danger text-white text-center p-3">Column 4 (4/12)</div>
+      <div class="col-8 bg-warning text-dark text-center p-3">Column 8 (8/12)</div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-sm-6 col-md-4 bg-info text-white text-center p-3">Responsive Column 1</div>
+      <div class="col-sm-6 col-md-4 bg-light text-dark text-center p-3">Responsive Column 2</div>
+      <div class="col-sm-12 col-md-4 bg-dark text-white text-center p-3">Responsive Column 3</div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-6 bg-secondary text-white p-3">
+        Parent Column
+        <div class="row mt-2">
+          <div class="col-6 bg-light text-dark text-center p-2">Nested 1</div>
+          <div class="col-6 bg-dark text-white text-center p-2">Nested 2</div>
+        </div>
+      </div>
+      <div class="col-md-6 bg-primary text-white text-center p-3">Another Parent Column</div>
+    </div>
+  </div>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
